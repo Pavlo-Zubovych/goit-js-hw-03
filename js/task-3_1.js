@@ -11,3 +11,18 @@ const user = {
 	hobby: 'html',
 	premium: true,
 };
+
+function myFunction(Object) {
+	user.mood = 'happy';
+	console.log(user);
+
+	user.mood = 'skydiving';
+	console.log(user);
+
+	user.premium = false;
+	console.log(user);
+
+	// выводит  ключ:значение используя Object.keys() и for...of
+}
+
+myFunction(user);
