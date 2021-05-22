@@ -12,7 +12,7 @@ const user = {
 	premium: true,
 };
 
-function myFunction(Object) {
+function myFunction() {
 	user.mood = 'happy';
 	console.log(user);
 
@@ -23,6 +23,12 @@ function myFunction(Object) {
 	console.log(user);
 
 	// выводит  ключ:значение используя Object.keys() и for...of
+	const keys = Object.keys(user);
+	console.log('______________________');
+
+	for (let key of keys) {
+		console.log(`${key}: ${user[key]}`);
+	}
 }
 
-myFunction(user);
+myFunction();
